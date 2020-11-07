@@ -75,4 +75,31 @@ function p01Func() {
     }
   
   
+    // create function p02Func similar to p01Func 
+    function p02Func(){
+        document.getElementById("problem").innerHTML="<p>I'm looking for an Iranian dish that consists of grilled chunks of chicken which are sometimes with bone and other times without bone. It's one of the most popular dishes of Iran. It is common to marinate the chunks in minced onion, lemon juice and sometimes saffron.</p>";
+    
+        document.getElementById("flowchart").setAttribute("src", "images/jujeh/jujehDesign.jpg");
+        document.getElementById("flowchart").style.display="none";
+
+        document.getElementById("js").setAttribute("src", "images/jujeh/jujeh1.jpg");
+        document.getElementById("js").style.display="none";
+
+        document.getElementById("another").setAttribute("src", "images/jujeh/jujeh2.jpg");
+        document.getElementById("another").style.display="none";
+
+        document.getElementById("check1").checked=false;
+        document.getElementById("check2").checked=false;
+        document.getElementById("check3").checked=false;
+
+    }
+    // Double click to zoom in and out of the image of the id "flowchart"
+    function zoomIn(){
+        document.getElementById("flowchart").style.width="200%";
+    }
+
+    function zoomOut(){
+        document.getElementById("flowchart").style.width="100%";
+    }
+
     
